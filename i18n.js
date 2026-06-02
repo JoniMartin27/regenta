@@ -15,8 +15,8 @@
       'nav.stack': 'Stack', 'nav.empezar': 'Empezar', 'nav.cta': 'Empezar', 'nav.github_mobile': 'Ver en GitHub',
 
       'hero.pill': 'v0.4 · 18 agentes persistentes · coste de inferencia <strong>$0</strong> <span class="pill__arrow">→</span>',
-      'hero.title': 'Gobierna una <span class="grad">flota de agentes de IA</span><br /> como tu equipo de ingeniería.',
-      'hero.sub': 'Regenta es el <strong>command center</strong> para dirigir agentes de IA con la misma disciplina con la que lideras a un equipo humano: asignas tareas, defines alcances, revisas resultados y mantienes <strong>control total</strong> sobre lo que ocurre.',
+      'hero.title': 'Gobierna una <span class="grad">flota de agentes</span> que mantiene tus proyectos.',
+      'hero.sub': 'Regenta no resuelve una tarea suelta: mantiene proyectos <strong>enteros</strong> vivos. Asignas objetivos, defines alcances y una flota —que tú diseñas— los lleva de la idea al código revisado, con <strong>control total</strong>.',
       'hero.cta_start': 'Empezar',
       'hero.cta_how': 'Cómo funciona',
       'hero.tag': '<em>No es magia. Es control.</em>',
@@ -152,8 +152,8 @@
       'nav.stack': 'Stack', 'nav.empezar': 'Get started', 'nav.cta': 'Get started', 'nav.github_mobile': 'View on GitHub',
 
       'hero.pill': 'v0.4 · 18 persistent agents · inference cost <strong>$0</strong> <span class="pill__arrow">→</span>',
-      'hero.title': 'Command a <span class="grad">fleet of AI agents</span><br /> like your engineering team.',
-      'hero.sub': 'Regenta is the <strong>command center</strong> to run AI agents with the same discipline you lead a human team with: you assign tasks, define scopes, review results and keep <strong>full control</strong> over what happens.',
+      'hero.title': 'Command a <span class="grad">fleet of agents</span> that maintains your projects.',
+      'hero.sub': 'Regenta doesn\'t solve a one-off task: it keeps <strong>whole</strong> projects alive. You set goals, define scopes, and a fleet —that you design— takes them from idea to reviewed code, with <strong>full control</strong>.',
       'hero.cta_start': 'Get started',
       'hero.cta_how': 'How it works',
       'hero.tag': '<em>It\'s not magic. It\'s control.</em>',

@@ -88,21 +88,21 @@
   <main id="top">
     <!-- HERO -->
     <section class="hero">
-      <div class="container hero__inner">
+      <div class="container hero__grid">
+        <div class="hero__left">
         <a class="pill reveal" href="#empezar">
           <span class="pill__dot"></span>
           <span data-i18n="hero.pill">v0.4 · 18 agentes persistentes · coste de inferencia <strong>$0</strong> <span class="pill__arrow">→</span></span>
         </a>
 
         <h1 class="hero__title reveal" data-i18n="hero.title">
-          Gobierna una <span class="grad">flota de agentes de IA</span><br />
-          como tu equipo de ingeniería.
+          Gobierna una <span class="grad">flota de agentes</span> que mantiene tus proyectos.
         </h1>
 
         <p class="hero__sub reveal" data-i18n="hero.sub">
-          Regenta es el <strong>command center</strong> para dirigir agentes de IA con la misma
-          disciplina con la que lideras a un equipo humano: asignas tareas, defines alcances,
-          revisas resultados y mantienes <strong>control total</strong> sobre lo que ocurre.
+          Regenta no resuelve una tarea suelta: mantiene proyectos <strong>enteros</strong> vivos.
+          Asignas objetivos, defines alcances y una flota —que tú diseñas— los lleva de la idea
+          al código revisado, con <strong>control total</strong>.
         </p>
 
         <div class="hero__cta reveal">
@@ -114,10 +114,11 @@
         </div>
 
         <p class="hero__tag reveal" data-i18n="hero.tag"><em>No es magia. Es control.</em></p>
+        </div><!-- /hero__left -->
 
-        <!-- terminal mock -->
-        <div class="hero__mock reveal">
-          <div class="mock">
+        <!-- console -->
+        <div class="hero__right reveal">
+          <div class="mock hud">
             <div class="mock__bar">
               <span class="mock__dot"></span><span class="mock__dot"></span><span class="mock__dot"></span>
               <span class="mock__title" data-i18n="mock.title">regenta — fleet</span>
@@ -134,9 +135,10 @@
               <div class="mockline" data-i18n="mock.l8"><span class="c-mut">›</span> <span class="c-gr">done</span> <span class="c-mut">— cada run, diff y decisión registrado.</span><span class="cursor"></span></div>
             </div>
           </div>
-        </div>
+        </div><!-- /hero__right -->
+      </div><!-- /hero__grid -->
 
-        <!-- stats -->
+      <div class="container">
         <div class="stats reveal" id="stats">
           <div class="stat"><div class="stat__num" data-count="18">18</div><div class="stat__lbl" data-i18n="stat.agents">agentes persistentes</div></div>
           <div class="stat"><div class="stat__num" data-count="1570" data-suffix="+">1570+</div><div class="stat__lbl" data-i18n="stat.tests">tests passing</div></div>
@@ -199,11 +201,14 @@
           <p data-i18n="uc.p">Le das objetivos y Regenta mantiene un backlog, reparte el trabajo entre la flota y lleva cada tarea de la idea al código revisado. Algunos de sus usos:</p>
         </div>
 
-        <div class="feat-grid">
-          <article class="feat reveal">
+        <div class="feat-grid bento">
+          <article class="feat is-lg reveal hud">
             <div class="feat__ic ic-vi">🚀</div>
             <h3 data-i18n="uc.c1t">Construir features</h3>
             <p data-i18n="uc.c1d">Del objetivo en lenguaje natural al código: el scout analiza, el builder implementa bajo scope y el reviewer + QA validan.</p>
+            <div class="minipipe" aria-hidden="true">
+              <span>scout</span><i>→</i><span>plan</span><i>→</i><span>build</span><i>→</i><span>review</span><i>→</i><span>QA</span><i>→</i><span class="mp-done">done</span>
+            </div>
           </article>
           <article class="feat reveal">
             <div class="feat__ic ic-cy">♻️</div>
@@ -308,7 +313,7 @@
             </div>
           </div>
 
-          <div class="agentcard">
+          <div class="agentcard hud hud--cy">
             <div class="agentcard__head">
               <span class="agentcard__avatar">🛰️</span>
               <div>
