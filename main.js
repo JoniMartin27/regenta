@@ -39,7 +39,7 @@
   const tabs = document.querySelectorAll('.shots__tab');
   const shots = document.querySelectorAll('.shot');
   const url = document.querySelector('.browser__url');
-  const urls = ['localhost:5173 / fleet', 'localhost:5173 / proyectos', 'localhost:5173 / metricas'];
+  const urls = ['localhost:5173 / fleet', 'localhost:5173 / projects', 'localhost:5173 / metrics'];
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
       const i = tab.dataset.shot;
@@ -53,11 +53,14 @@
   const copyBtn = document.getElementById('copyBtn');
   const codeBlock = document.getElementById('codeBlock');
   copyBtn?.addEventListener('click', async () => {
+    const i18n = window.RegentaI18n;
+    const labelCopy = (i18n && i18n.t('qs.copy')) || 'Copiar';
+    const labelDone = (i18n && i18n.t('qs.copied')) || '¡Copiado!';
     try {
       await navigator.clipboard.writeText(codeBlock.innerText.trim());
-      copyBtn.textContent = '¡Copiado!';
+      copyBtn.textContent = labelDone;
       copyBtn.classList.add('is-done');
-      setTimeout(() => { copyBtn.textContent = 'Copiar'; copyBtn.classList.remove('is-done'); }, 1800);
+      setTimeout(() => { copyBtn.textContent = labelCopy; copyBtn.classList.remove('is-done'); }, 1800);
     } catch { copyBtn.textContent = 'Error'; }
   });
 
