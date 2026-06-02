@@ -52,6 +52,8 @@
 
       <nav class="nav__links" aria-label="Principal">
         <a href="#producto" data-i18n="nav.producto">Producto</a>
+        <a href="#casos" data-i18n="nav.casos">Casos</a>
+        <a href="#agentes" data-i18n="nav.agentes">Agentes</a>
         <a href="#arquitectura" data-i18n="nav.arquitectura">Arquitectura</a>
         <a href="#seguridad" data-i18n="nav.seguridad">Seguridad</a>
         <a href="#stack" data-i18n="nav.stack">Stack</a>
@@ -72,6 +74,8 @@
     </div>
     <nav class="nav__mobile" id="navMobile" aria-label="Móvil">
       <a href="#producto" data-i18n="nav.producto">Producto</a>
+      <a href="#casos" data-i18n="nav.casos">Casos</a>
+      <a href="#agentes" data-i18n="nav.agentes">Agentes</a>
       <a href="#arquitectura" data-i18n="nav.arquitectura">Arquitectura</a>
       <a href="#seguridad" data-i18n="nav.seguridad">Seguridad</a>
       <a href="#stack" data-i18n="nav.stack">Stack</a>
@@ -186,8 +190,53 @@
       </div>
     </section>
 
+    <!-- USE CASES -->
+    <section class="section section--alt" id="casos">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="kicker" data-i18n="uc.kicker">Casos de uso</span>
+          <h2 data-i18n="uc.h2">Mantén proyectos vivos, no scripts de una vez.</h2>
+          <p data-i18n="uc.p">Le das objetivos y Regenta mantiene un backlog, reparte el trabajo entre la flota y lleva cada tarea de la idea al código revisado. Algunos de sus usos:</p>
+        </div>
+
+        <div class="feat-grid">
+          <article class="feat reveal">
+            <div class="feat__ic ic-vi">🚀</div>
+            <h3 data-i18n="uc.c1t">Construir features</h3>
+            <p data-i18n="uc.c1d">Del objetivo en lenguaje natural al código: el scout analiza, el builder implementa bajo scope y el reviewer + QA validan.</p>
+          </article>
+          <article class="feat reveal">
+            <div class="feat__ic ic-cy">♻️</div>
+            <h3 data-i18n="uc.c2t">Refactors con red de seguridad</h3>
+            <p data-i18n="uc.c2d"><code>allowedFiles</code> acota el cambio, cada diff queda auditado y el reviewer comprueba los criterios de aceptación.</p>
+          </article>
+          <article class="feat reveal">
+            <div class="feat__ic ic-am">🧪</div>
+            <h3 data-i18n="uc.c3t">Tests y QA</h3>
+            <p data-i18n="uc.c3d">El skill test-runner ejecuta la suite y captura fallos; el rol QA valida cobertura antes de aceptar.</p>
+          </article>
+          <article class="feat reveal">
+            <div class="feat__ic ic-vi">🔍</div>
+            <h3 data-i18n="uc.c4t">Code review continuo</h3>
+            <p data-i18n="uc.c4d">El reviewer analiza diffs en busca de bugs, problemas de seguridad y criterios — con tu aprobación final.</p>
+          </article>
+          <article class="feat reveal">
+            <div class="feat__ic ic-cy">📦</div>
+            <h3 data-i18n="uc.c5t">Migraciones y bumps de deps</h3>
+            <p data-i18n="uc.c5d">El scout evalúa el estado, se genera un plan por pasos, el builder ejecuta acotado y el reviewer valida.</p>
+          </article>
+          <article class="feat reveal">
+            <div class="feat__ic ic-am">🐛</div>
+            <h3 data-i18n="uc.c6t">Fix de bugs y mantenimiento</h3>
+            <p data-i18n="uc.c6d">El scout localiza, el Coordinator asigna, el builder corrige y el reviewer aprueba — en bucle mientras el proyecto viva.</p>
+          </article>
+        </div>
+        <p class="uc-foot reveal" data-i18n="uc.foot">…y cualquier otra: si puedes describir la tarea y darle alcance, hay un agente para ello.</p>
+      </div>
+    </section>
+
     <!-- FEATURES -->
-    <section class="section section--alt">
+    <section class="section">
       <div class="container">
         <div class="sec-head reveal">
           <span class="kicker" data-i18n="feat.kicker">Capacidades</span>
@@ -226,6 +275,56 @@
             <h3 data-i18n="feat.f6t">Chat Fleet en vivo</h3>
             <p data-i18n="feat.f6d">Canales por proyecto, DMs CEO↔agente con memoria, grupos multi-agente y comandos (<code>/task</code>, <code>/approve</code>).</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CUSTOMIZATION -->
+    <section class="section section--alt" id="agentes">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="kicker" data-i18n="cu.kicker">Personalización total</span>
+          <h2 data-i18n="cu.h2">Un agente para lo que sea.</h2>
+          <p data-i18n="cu.p">No te quedas con la flota por defecto. Defines tus propios agentes —nombre, rol, persona, modelo y skills— y los colocas en tu cadena de mando.</p>
+        </div>
+
+        <div class="cust reveal">
+          <div class="cust__list">
+            <div class="cust__item">
+              <span class="cust__ic">🎭</span>
+              <div><b data-i18n="cu.b1t">Persona e instrucciones propias</b><p data-i18n="cu.b1d">Dale a cada agente su system prompt, personalidad, avatar y mascota. Su carácter, sus reglas.</p></div>
+            </div>
+            <div class="cust__item">
+              <span class="cust__ic">🔀</span>
+              <div><b data-i18n="cu.b2t">Modelo y provider por agente</b><p data-i18n="cu.b2d">Asigna a cada uno su modelo y sus API keys entre 8 providers — o inferencia local a coste $0.</p></div>
+            </div>
+            <div class="cust__item">
+              <span class="cust__ic">🧩</span>
+              <div><b data-i18n="cu.b3t">Rol y skills a medida</b><p data-i18n="cu.b3d">Scout, builder, reviewer u orquestador, con los skills (análisis, build, review, tests, git) que necesites.</p></div>
+            </div>
+            <div class="cust__item">
+              <span class="cust__ic">🌳</span>
+              <div><b data-i18n="cu.b4t">Tu organigrama</b><p data-i18n="cu.b4d">Encadena agentes en jerarquía: directores que planifican, especialistas que ejecutan. Tú al mando.</p></div>
+            </div>
+          </div>
+
+          <div class="agentcard">
+            <div class="agentcard__head">
+              <span class="agentcard__avatar">🛰️</span>
+              <div>
+                <span class="agentcard__name">Atlas</span>
+                <span class="agentcard__role" data-i18n="cu.card_role">builder · especialista</span>
+              </div>
+              <span class="agentcard__badge" data-i18n="cu.card_badge">nuevo agente</span>
+            </div>
+            <div class="agentcard__field"><span data-i18n="cu.f_model">Modelo</span><b>claude-opus-4-8 · local</b></div>
+            <div class="agentcard__field"><span data-i18n="cu.f_persona">Persona</span><b data-i18n="cu.persona_val">Conciso · TDD-first · explica diffs</b></div>
+            <div class="agentcard__field"><span data-i18n="cu.f_scope">Scope</span><b><code>src/api/**</code></b></div>
+            <div class="agentcard__skills">
+              <span data-i18n="cu.f_skills">Skills</span>
+              <i>safe-builder</i><i>test-runner</i><i>git-pr</i>
+            </div>
+          </div>
         </div>
       </div>
     </section>
