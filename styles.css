@@ -308,10 +308,12 @@ body::after{
 .code-note{color:var(--txt-mut);font-size:.9rem;margin-top:18px}
 
 /* ---------- CTA ---------- */
-.cta{padding:120px 0;position:relative;overflow:hidden;background:radial-gradient(ellipse 70% 120% at 80% 100%,rgba(124,58,237,.2),transparent 65%)}
-.cta__inner{max-width:30ch}
-.cta h2{font-size:clamp(2.1rem,5vw,3.4rem);margin-bottom:16px;letter-spacing:-.03em}
-.cta p{color:var(--txt-mut);font-size:1.1rem;margin-bottom:30px;max-width:48ch}
+.cta{padding:124px 0;position:relative;overflow:hidden;background:radial-gradient(ellipse 80% 130% at 92% 50%,rgba(124,58,237,.22),transparent 60%)}
+.cta::after{content:"";position:absolute;top:50%;right:6%;width:240px;height:240px;transform:translateY(-50%);border:1.5px solid rgba(167,139,250,.18);border-radius:50%;box-shadow:0 0 80px -20px rgba(124,58,237,.5) inset;pointer-events:none}
+.cta::before{content:"// SYSTEM READY";position:absolute;top:50%;right:calc(6% + 30px);transform:translateY(-50%);font-family:'JetBrains Mono',monospace;font-size:.74rem;letter-spacing:.16em;color:rgba(167,139,250,.55);writing-mode:vertical-rl;text-orientation:mixed;pointer-events:none}
+.cta__inner{max-width:34ch;margin:0 auto 0 0;position:relative;z-index:1}
+.cta h2{font-size:clamp(2.2rem,5.2vw,3.6rem);margin-bottom:16px;letter-spacing:-.035em}
+.cta p{color:var(--txt-mut);font-size:1.1rem;margin-bottom:30px;max-width:42ch}
 .cta__btns{display:flex;gap:14px;flex-wrap:wrap}
 .cta__tag{margin-top:26px;color:var(--vi);font-style:italic}
 
